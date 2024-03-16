@@ -117,7 +117,7 @@ public class Main{
                         check();
                     }
                     isDraw();
-                }  
+                }
             }
         }
 
@@ -150,121 +150,124 @@ public class Main{
                 }
             }
         }
-    }
-    // Methods
-    public void check(){
-        // Checking the X turns
-        if((gameButtons[0].getText().equals("X")  &&
-            gameButtons[1].getText().equals("X")  &&
-            gameButtons[2].getText().equals("X") )){
-            xIsWinner(0,1,2);
-            
-        }else if(gameButtons[3].getText().equals("X")  &&
-            gameButtons[4].getText().equals("X")  &&
-            gameButtons[5].getText().equals("X") ){
-            xIsWinner(3,4,5);
-            
-        }else if(gameButtons[6].getText().equals("X")  &&
-            gameButtons[7].getText().equals("X")  &&
-            gameButtons[8].getText().equals("X") ){
-            xIsWinner(6,7,8);
-            
-        }else if(gameButtons[0].getText().equals("X")  &&
-            gameButtons[4].getText().equals("X")  &&
-            gameButtons[8].getText().equals("X") ){
-            xIsWinner(0,4,8);
-            
-        }else if(gameButtons[2].getText().equals("X")  &&
-            gameButtons[4].getText().equals("X")  &&
-            gameButtons[6].getText().equals("X") ){
-            xIsWinner(2,4,6);
-            
-        }else if(gameButtons[0].getText().equals("X")  &&
-            gameButtons[3].getText().equals("X")  &&
-            gameButtons[6].getText().equals("X") ){
-            xIsWinner(0,3,6);
-            
-        }else if(gameButtons[1].getText().equals("X")  &&
-            gameButtons[4].getText().equals("X")  &&
-            gameButtons[7].getText().equals("X") ){
-            xIsWinner(1,4,7);
-            
-        }else if(gameButtons[2].getText().equals("X")  &&
-            gameButtons[5].getText().equals("X")  &&
-            gameButtons[8].getText().equals("X") ){
-            xIsWinner(2,5,8);
+        // Methods
+        public void check(){
+            // Checking the X turns
+            if((gameButtons[0].getText().equals("X")  &&
+                gameButtons[1].getText().equals("X")  &&
+                gameButtons[2].getText().equals("X") )){
+                xIsWinner(0,1,2);
+
+            }else if(gameButtons[3].getText().equals("X")  &&
+                gameButtons[4].getText().equals("X")  &&
+                gameButtons[5].getText().equals("X") ){
+                xIsWinner(3,4,5);
+
+            }else if(gameButtons[6].getText().equals("X")  &&
+                gameButtons[7].getText().equals("X")  &&
+                gameButtons[8].getText().equals("X") ){
+                xIsWinner(6,7,8);
+
+            }else if(gameButtons[0].getText().equals("X")  &&
+                gameButtons[4].getText().equals("X")  &&
+                gameButtons[8].getText().equals("X") ){
+                xIsWinner(0,4,8);
+
+            }else if(gameButtons[2].getText().equals("X")  &&
+                gameButtons[4].getText().equals("X")  &&
+                gameButtons[6].getText().equals("X") ){
+                xIsWinner(2,4,6);
+
+            }else if(gameButtons[0].getText().equals("X")  &&
+                gameButtons[3].getText().equals("X")  &&
+                gameButtons[6].getText().equals("X") ){
+                xIsWinner(0,3,6);
+
+            }else if(gameButtons[1].getText().equals("X")  &&
+                gameButtons[4].getText().equals("X")  &&
+                gameButtons[7].getText().equals("X") ){
+                xIsWinner(1,4,7);
+
+            }else if(gameButtons[2].getText().equals("X")  &&
+                gameButtons[5].getText().equals("X")  &&
+                gameButtons[8].getText().equals("X") ){
+                xIsWinner(2,5,8);
+            }
+
+            // Checking the O turns
+            if((gameButtons[0].getText().equals("O")  &&
+                gameButtons[1].getText().equals("O")  &&
+                gameButtons[2].getText().equals("O") )){
+                oIsWinner(0,1,2);
+
+            }else if(gameButtons[3].getText().equals("O")  &&
+                gameButtons[4].getText().equals("O")  &&
+                gameButtons[5].getText().equals("O") ){
+                oIsWinner(3,4,5);
+
+            }else if(gameButtons[6].getText().equals("O")  &&
+                gameButtons[7].getText().equals("O")  &&
+                gameButtons[8].getText().equals("O") ){
+                oIsWinner(6,7,8);
+
+            }else if(gameButtons[0].getText().equals("O")  &&
+                gameButtons[4].getText().equals("O")  &&
+                gameButtons[8].getText().equals("O") ){
+                oIsWinner(0,4,8);
+            }else if(gameButtons[2].getText().equals("O")  &&
+                gameButtons[4].getText().equals("O")  &&
+                gameButtons[6].getText().equals("O") ){
+                oIsWinner(2,4,6);
+
+            }else if(gameButtons[0].getText().equals("O")  &&
+                gameButtons[3].getText().equals("O")  &&
+                gameButtons[6].getText().equals("O") ){
+                oIsWinner(0,3,6);
+
+            }else if(gameButtons[1].getText().equals("O")  &&
+                gameButtons[4].getText().equals("O")  &&
+                gameButtons[7].getText().equals("O") ){
+                oIsWinner(1,4,7);
+
+            }else if(gameButtons[2].getText().equals("O")  &&
+                gameButtons[5].getText().equals("O")  &&
+                gameButtons[8].getText().equals("O") ){
+                oIsWinner(2,5,8);
+            }     
         }
-        
-        // Checking the O turns
-        if((gameButtons[0].getText().equals("O")  &&
-            gameButtons[1].getText().equals("O")  &&
-            gameButtons[2].getText().equals("O") )){
-            oIsWinner(0,1,2);
-            
-        }else if(gameButtons[3].getText().equals("O")  &&
-            gameButtons[4].getText().equals("O")  &&
-            gameButtons[5].getText().equals("O") ){
-            oIsWinner(3,4,5);
-            
-        }else if(gameButtons[6].getText().equals("O")  &&
-            gameButtons[7].getText().equals("O")  &&
-            gameButtons[8].getText().equals("O") ){
-            oIsWinner(6,7,8);
-            
-        }else if(gameButtons[0].getText().equals("O")  &&
-            gameButtons[4].getText().equals("O")  &&
-            gameButtons[8].getText().equals("O") ){
-            oIsWinner(0,4,8);
-        }else if(gameButtons[2].getText().equals("O")  &&
-            gameButtons[4].getText().equals("O")  &&
-            gameButtons[6].getText().equals("O") ){
-            oIsWinner(2,4,6);
-            
-        }else if(gameButtons[0].getText().equals("O")  &&
-            gameButtons[3].getText().equals("O")  &&
-            gameButtons[6].getText().equals("O") ){
-            oIsWinner(0,3,6);
-            
-        }else if(gameButtons[1].getText().equals("O")  &&
-            gameButtons[4].getText().equals("O")  &&
-            gameButtons[7].getText().equals("O") ){
-            oIsWinner(1,4,7);
-            
-        }else if(gameButtons[2].getText().equals("O")  &&
-            gameButtons[5].getText().equals("O")  &&
-            gameButtons[8].getText().equals("O") ){
-            oIsWinner(2,5,8);
+    
+        public void xIsWinner(int i, int j, int k){
+            textLabel.setText("Jogador X VENCEU!!");
+            gameButtons[i].setBackground(Color.white);
+            gameButtons[j].setBackground(Color.white);
+            gameButtons[k].setBackground(Color.white);
+            for(int a = 0; a <= 8; a++){
+                gameButtons[a].removeMouseListener(this);
+                gameButtons[a].setEnabled(false);
+                gameButtons[a].setBorderPainted(false);
+            }
         }
-    }
-    
-    public void xIsWinner(int i, int j, int k){
-        textLabel.setText("Jogador X VENCEU!!");
-        gameButtons[i].setBackground(Color.white);
-        gameButtons[j].setBackground(Color.white);
-        gameButtons[k].setBackground(Color.white);
-        for(int a = 0; a <= 8; a++){
-            gameButtons[a].setEnabled(false);
-            gameButtons[a].setBorderPainted(false);
+
+        public void oIsWinner(int i, int j, int k){
+            textLabel.setText("Jogador O VENCEU!!");
+            gameButtons[i].setBackground(Color.white);
+            gameButtons[j].setBackground(Color.white);
+            gameButtons[k].setBackground(Color.white);
+            for(int a = 0; a <= 8; a++){
+                gameButtons[a].removeMouseListener(this);
+                gameButtons[a].setEnabled(false);
+                gameButtons[a].setBorderPainted(false);
+            }
         }
-    }
-    
-    public void oIsWinner(int i, int j, int k){
-        textLabel.setText("Jogador O VENCEU!!");
-        gameButtons[i].setBackground(Color.white);
-        gameButtons[j].setBackground(Color.white);
-        gameButtons[k].setBackground(Color.white);
-        for(int a = 0; a <= 8; a++){
-            gameButtons[a].setEnabled(false);
-            gameButtons[a].setBorderPainted(false);
-        }       
-    }
-    
-    public void isDraw(){
-        if(buttonsEnabled == 0){
-            textLabel.setText("EMPATE");
-            for(int i = 0; i <= 8; i++){
-                gameButtons[i].setEnabled(false);
-                gameButtons[i].setBorderPainted(false);
+
+        public void isDraw(){
+            if(buttonsEnabled == 0){
+                textLabel.setText("EMPATE");
+                for(int i = 0; i <= 8; i++){
+                    gameButtons[i].removeMouseListener(this);
+                    gameButtons[i].setEnabled(false);
+                    gameButtons[i].setBorderPainted(false);
+                }
             }
         }
     }
